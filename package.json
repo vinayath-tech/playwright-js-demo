@@ -1,0 +1,21 @@
+{
+  "name": "playwright-js-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinayath-tech/playwright-js-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinayath-tech/playwright-js-demo/issues"
+  },
+  "homepage": "https://github.com/vinayath-tech/playwright-js-demo#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.23.1"
+  }
+}
