@@ -2,14 +2,104 @@
   "cookies": [
     {
       "sameSite": "Lax",
-      "name": "session-username",
-      "value": "standard_user",
-      "domain": "www.saucedemo.com",
+      "name": "xui-webapp",
+      "value": "s%3Ag9U0tdEUnMWSnit_UJG1ktkBAncfRqrK.Cv5crimB5pfuGDJiauNQXx%2BfI66B56rxpRjfX22kV68",
+      "domain": "manage-case.aat.platform.hmcts.net",
       "path": "/",
-      "expires": 1657068771,
+      "expires": 1657216282.16696,
+      "httpOnly": true,
+      "secure": true
+    },
+    {
+      "sameSite": "Strict",
+      "name": "XSRF-TOKEN",
+      "value": "d065ecb5-52b9-4894-b6c8-832a8a955982",
+      "domain": "idam-web-public.aat.platform.hmcts.net",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true
+    },
+    {
+      "sameSite": "Lax",
+      "name": "seen_cookie_message",
+      "value": "yes",
+      "domain": "idam-web-public.aat.platform.hmcts.net",
+      "path": "/",
+      "expires": 1659606680,
+      "httpOnly": false,
+      "secure": true
+    },
+    {
+      "sameSite": "Lax",
+      "name": "cookies_policy",
+      "value": "{\"essential\":true,\"analytics\":false,\"apm\":false}",
+      "domain": "idam-web-public.aat.platform.hmcts.net",
+      "path": "/",
+      "expires": 1688723480,
+      "httpOnly": false,
+      "secure": true
+    },
+    {
+      "sameSite": "Lax",
+      "name": "cookies_preferences_set",
+      "value": "false",
+      "domain": "idam-web-public.aat.platform.hmcts.net",
+      "path": "/",
+      "expires": 1688723480,
+      "httpOnly": false,
+      "secure": true
+    },
+    {
+      "sameSite": "Lax",
+      "name": "Idam.Session",
+      "value": "*AAJTSQACMDIABHR5cGUAA0pXVAACUzEAAjAx*eyJ0eXAiOiJKV1QiLCJjdHkiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.ZXlKMGVYQWlPaUpLVjFRaUxDSmxibU1pT2lKQk1USTRRMEpETFVoVE1qVTJJaXdpWVd4bklqb2laR2x5SW4wLi5wUmlWbjBtS243NS1XeHhFWk0zUHBRLjhlZW5UWmVoQWJQY0E5d2ZlZVRLdU1VUklZTEdKamVSczI4bVZlaGdSaE1EUnJYMzlZUXBMSm5fajNzUGRDT0JOaUQ2YUw2bTlpdTQ2M3JlVS1MS05LeEJNNWpUWWtQQkI1WE40VGpmemMzaVFzTzduVm1aMlFMbWVVZkdsMzlCdUliVm9YWVZWZEJZZEkwU3JVSEhyVll5OGUtc0c3eUlHWHdYSERNbXE4OWZ0S3cyRHdtaVJ1dFM1cUZYQUJhYlk5WmZ4VHNRYXJDNmpQZXZlbEczaEVCQWRGbXdfcmlsMUpGZDBrZ0Nhb19NcHJZMWZuVGtfYVNZNjc0dGFVUjhxWkVjelVRWUhraUJyUko5bFJndTlWYmROWVBxdTZhZlZGc1Q2NlE5MEV3bk9FbWxpdjRTSzBwU2ZzazUwbDZXVFZPTDlWTGJxNVpWVndwSExmTGdQNmN6S0JoS2JvX084cTdqR1BhekIxVXlKVjFuc0ZZWWFGeVlac3hjRTZNbF9GWVFHczBlcE5FTUczWEV4LXBzNVM5S1Q5WGYxTTRWSTAzRGRCUzFaYkdSUHVmcmVTWHh3bUlGWlQ3elp5TU92VjFKU1l0Zmd5YmJXaHU4bS1CRXFPYUhoa2JFX3NCcjRSa3pRN19kUy02Vm1vMEZFckUwM0lvYWRIYzJ0X1ZXdXdaUUQtNzRqcTZPb3BWMThqeUlhME4wVGNfUlJxbmdLbEQ5NjNNTi1uV1BfTXh2ZzE0aVJXdGxJN2QycHdWdXJwdXhaZlhkOGU0aVBlckdkb1pYUHJWNjdJU2haWkxTVHVXWTVHa3ZlQ3RLbEtBcl9PbnRJVElpRU9vUVZzQ1dmVmFuR3YwU3Zfdy03UnpOLVpMdjBTSnBTYzRXbmROdEJ3Y1E5dEhEWFpmODltUVdEUVBJSnBMMDgwQVhSMUJQVlVuMk93cFJlVi11MEQ0VmJ5cHdGRnU4d0pYNll3WHZ4dWtxNnd4ampQV0Y3MUlwSUxvdzVFXzZXcnI1T3hwQmdWSmlvX2ZqNWRjaHVWMzhSVmY1MUw2ZXNjQVU1b2xzb0IwUVdFM1FnZUxhUlF4NW9JN2N5YUZsaVc1Q3A1NHZIclpWRFhYSzVnQTc0MmdVbGNnYl9kallSRk5ac0xaTW9qUWVHSzZYYnZEVkF6WXdzNXQ0LUxuYVBwc0pONERMWk5Yd3oxUHRtZkxyVUZOUFpRRmtqU1dTYzJEYXhqamJiVmUtMk1QX1JwemZQWjhSSUJrUnpQOTBoWkQ1UDdxSjNWN1FpXzQ0b3RnQ2tjN0Jmb1I2NWFLbXNiM3lVSzdjRWd5cVhEdUhxdC1pRWFfcDFES0p4VUFMbDYtdGxnTVozTEpJRWVJOTNnU1RMTjhQTE1hQW1ydHFFdW5HakFfaFItYkVKRXpSSXVtdDlfZU95c1FFSGx6NG10dmxHMDJYSDlDb2xnY1pjaXRPLVpYQldsNXFmUG4xVC1QeGtfTUFkZXBaWUVTRDVtNmdqMnhVRnpPa0F6Xzh1QjZRYkJGM3BrLTFWOWE2U3BzdTRrRmNGbmdZLVZiaEdaRHUzdnlmU3pwMVJjUEV2RllraUpZUGxpakEwOUZHNUVmYnlPZ0pIYjhJOFhvcnNOaE5fSUtWMUQzZ18xcE5CN05JZzB1azNoUTJ4X2FyQy13MUptSV8tX0dPQnprSWVNYXFoRm0yc3hFVVA3ZXhMOWQ4OUctRDkzVjhyZUVOcWdmd0FjczRqdGJ3cVFYMktsRi0xVGpyMGlic2dpSGRWUDVkVWdyRHI0WHdseTY4RHJtMm5fSWptMlNjMGsxSkZnRUpKUDZzalhId205SkQ1UGVzX3lpRnE0M2FoRDdkblZCTEhaRGxJbE1BeHhFSjBXNzZybG1vNlYyZEFsbTZGdFN2UWpxczZVUXJXdFUzbnNwODc2b1RJbDNvRkQ1VUotX0RTc3Y2blRNcmhpNVhtNTkzNnhpRDhZbUU5RVJIaV80NzVNRkdlRml2X3BLV1dDaWRHMF8taDRRZVMyUWpuanNMTGtoNExnZXppdTNjY25zQlhnUUZVV2cwQWlvemhBdl9INlgyZlR3T3RIUUp5cjAuMVEyLThUT0l0dDRaNUI3aXVnbXZIUQ.BFdeYAJHqduBk2SyVMX9_GGpTIcGNEfR2pOh3G1iEXE",
+      "domain": "idam-web-public.aat.platform.hmcts.net",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true
+    },
+    {
+      "sameSite": "Lax",
+      "name": "__userid__",
+      "value": "a9ab7f4b-7e0c-49d4-8ed3-75b54d421cdc",
+      "domain": "manage-case.aat.platform.hmcts.net",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "__auth__",
+      "value": "eyJ0eXAiOiJKV1QiLCJraWQiOiIxZXIwV1J3Z0lPVEFGb2pFNHJDL2ZiZUt1M0k9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJzc2NzLnN1cGVydXNlckBtYWlsaW5hdG9yLmNvbSIsImN0cyI6Ik9BVVRIMl9TVEFURUxFU1NfR1JBTlQiLCJhdXRoX2xldmVsIjowLCJhdWRpdFRyYWNraW5nSWQiOiI3MzM0NDlmNS0yZTgyLTQxYTctOTA1ZS1jNjg5ZTg4Y2NmMTEtMTM2NTcyODcwIiwiaXNzIjoiaHR0cHM6Ly9mb3JnZXJvY2stYW0uc2VydmljZS5jb3JlLWNvbXB1dGUtaWRhbS1hYXQyLmludGVybmFsOjg0NDMvb3BlbmFtL29hdXRoMi9yZWFsbXMvcm9vdC9yZWFsbXMvaG1jdHMiLCJ0b2tlbk5hbWUiOiJhY2Nlc3NfdG9rZW4iLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwiYXV0aEdyYW50SWQiOiJDYjlLRy1BVU1ycmloc2ZVVFJ1ck5neWYtTTQiLCJub25jZSI6InVKNGpfOXJpYXRHVm45SGdaVEoyeFMxWFZrNjB4YW5NM2ZLMVRqd0pPeWciLCJhdWQiOiJ4dWl3ZWJhcHAiLCJuYmYiOjE2NTcxODc0NzksImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJzY29wZSI6WyJvcGVuaWQiLCJwcm9maWxlIiwicm9sZXMiLCJjcmVhdGUtdXNlciIsIm1hbmFnZS11c2VyIiwic2VhcmNoLXVzZXIiXSwiYXV0aF90aW1lIjoxNjU3MTg3NDc5LCJyZWFsbSI6Ii9obWN0cyIsImV4cCI6MTY1NzIxNjI3OSwiaWF0IjoxNjU3MTg3NDc5LCJleHBpcmVzX2luIjoyODgwMCwianRpIjoiclFUM2ZKWW14Vm9Eam5zbTIwVEZrUVpXeDJJIn0.NVupv_wDXAiy7IIV3YMDBg57PAW_9sbNinHCLx4PwFgjMIFzi4ZjyoRmoPq4uEf0suNiWc6W-k5XS0QVVZuZQ6g6g2kSNaUL8NCGsX_naLFYKWwb7At1qUACVWgRXziLPSr413yYQQ2sM7QK0WWL7FigJ30bwO_Tg6mLVBbSuyDRU0wgks3h5PTJcd5p4D_-016L0kp2RBQ79GtrDnW5w4ZpRskfLB6EURiira_jIdhlME69SK01HjAEFBjy5ODPzkyRp9YZM6Ga4_iflm2JylGkbJ3OC90kxHkyWlF-0zDePRR0IHDH5HTeT07R6hCMVQ_q7vcP_mzdT1amSWOYtg",
+      "domain": "manage-case.aat.platform.hmcts.net",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "XSRF-TOKEN",
+      "value": "VytXBwRo-p1NXmB2ZUOvyKaCFGd5F1uNCx_8",
+      "domain": "manage-case.aat.platform.hmcts.net",
+      "path": "/",
+      "expires": -1,
       "httpOnly": false,
       "secure": false
     }
   ],
-  "origins": []
+  "origins": [
+    {
+      "origin": "https://manage-case.aat.platform.hmcts.net",
+      "localStorage": [
+        {
+          "name": "dtsrE",
+          "value": "ASUUOKSHRIRPIQKPCRQFWHARRRVPRMHC-0=enabled"
+        }
+      ]
+    }
+  ]
 }

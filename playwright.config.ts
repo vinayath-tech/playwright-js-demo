@@ -13,7 +13,7 @@ import { devices } from '@playwright/test';
 const config: PlaywrightTestConfig = {
   testDir: './tests',
   /* Maximum time one test can run for. */
-  timeout: 30 * 1000,
+  timeout: 60 * 1000,
   expect: {
     /**
      * Maximum time expect() should wait for the condition to be met.
@@ -28,10 +28,11 @@ const config: PlaywrightTestConfig = {
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
+    navigationTimeout: 10000,
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: 'https://www.saucedemo.com',
+    baseURL: 'https://manage-case.aat.platform.hmcts.net/',
     browserName: 'chromium',
-    headless: true,
+    headless: false,
     screenshot: 'on',
     trace: 'retain-on-failure'
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
