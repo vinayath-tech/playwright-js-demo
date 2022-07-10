@@ -1,10 +1,16 @@
 import {test, BrowserContext, Page, expect} from "@playwright/test";
+import ItemDetailsPage from "../pages/itemDetails.page";
+import LandingPage from "../pages/landing.page";
+import CheckoutPage from "../pages/checkout.page";
 
 test.describe('Navigation tests', () => {
 
     let page: Page;
     let testData:string = 'Sauce Labs Backpack';
     let webContext;
+    let landingPage: LandingPage;
+    let itemDetailsPage: ItemDetailsPage;
+    let checkOutPage: CheckoutPage;
     
     test.beforeEach(async({browser}) => {
         webContext = await browser.newContext({storageState:'state.json'});
@@ -14,16 +20,18 @@ test.describe('Navigation tests', () => {
 
 
     test('Navigate to item details page', async() => {
-        await page.click(`text=${testData}`);
+        landingPage = new LandingPage(page);
+        itemDetailsPage = new ItemDetailsPage(page);
 
-        const itemText = page.locator('.inventory_details_name');
-        await expect(itemText).toContainText(testData);
+        await landingPage.eleClick(`text=${testData}`);
+        await expect(itemDetailsPage.detailItemEle()).toContainText(testData);
     });
 
     test('Navigate to checkout page', async() => {
-        await page.locator('.shopping_cart_link').click();
+        itemDetailsPage = new ItemDetailsPage(page);
+        checkOutPage = new CheckoutPage(page);
 
-        const checkOutBtn = page.locator('#checkout');
-        await expect(checkOutBtn).toBeVisible();
+        await itemDetailsPage.clickShoppingCart();
+        await expect(checkOutPage.checkoutBtn()).toBeVisible();
     })
 });

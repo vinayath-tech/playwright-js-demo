@@ -1,35 +1,38 @@
-import { Browser, Page, BrowserContext, expect, test } from '@playwright/test';
+// import { Browser, Page, BrowserContext, expect, test } from '@playwright/test';
+// import {LandingPage} from '../pages/landing.page';
+import * as data from '../data/testData.json';
+import test, { expect, describe } from '../fixtures/basePage';
 
 test.describe('Sauce feature', () => {
 
     let webContext;
-    let page: Page;
+    // let page: Page;
+    // let landingPage: LandingPage;
 
-    test.beforeEach(async({browser}) => {
+
+    test.beforeEach(async({ browser, page }) => {
         webContext = await browser.newContext({storageState:'state.json'});
         page = await webContext.newPage();
         await page.goto('https://www.saucedemo.com/inventory.html');
     });
 
-    test('First playwright test', async() => {
-        console.log(await page.locator('.inventory_item_name').allTextContents());
+    test('First playwright test', async({ landingPage }) => {
+        // landingPage = new LandingPage(page);
+        console.log(await landingPage.verifyItemContents());
     });
     
 
-    test('Sort products low to high', async() => {
+    test.skip('Sort products low to high', async({ landingPage }) => {
 
-        let price: string[] = [];
-        let actPrice: string[] = [ '7.99', '9.99', '15.99', '15.99', '29.99', '49.99' ];
+        // landingPage = new LandingPage(page);
 
-        await page.selectOption('.product_sort_container', {label : 'Price (low to high)'});
-        const itemPrice = await page.locator('.inventory_item_price').allInnerTexts();
+        let actPrice: string[] = [];
 
-        await itemPrice.forEach( element => {
-           price.push(element.replace(/\$/g,''));
-        });
+        await landingPage.sortItem('Price (low to high)');
+        actPrice  = await landingPage.getItemPrice();
     
         //Asserts array
-        if(JSON.stringify(price) !== JSON.stringify(actPrice)) throw new Error("Uncaught typeError: the argument is not a array");
+        if(JSON.stringify(actPrice) !== JSON.stringify(data.actItemPrice)) throw new Error("Uncaught typeError: the argument is not a array");
     });
 
 });

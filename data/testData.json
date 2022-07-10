@@ -1,0 +1,5 @@
+{
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "actItemPrice": ["7.99", "9.99", "15.99", "15.99", "29.99", "49.99"]
+}
