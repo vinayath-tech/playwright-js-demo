@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "functional-test": "npx playwright test",
+    "crossbrowser-test": "saucectl run"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vinayath-tech/playwright-js-demo.git"
@@ -16,6 +19,6 @@
   },
   "homepage": "https://github.com/vinayath-tech/playwright-js-demo#readme",
   "devDependencies": {
-    "@playwright/test": "^1.23.1"
+    "@playwright/test": "1.22.2"
   }
 }

@@ -1,0 +1,62 @@
+apiVersion: v1alpha
+kind: playwright
+defaults:
+  mode: sauce
+sauce:
+  region: eu-central-1
+  concurrency: 2 # Controls how many suites are executed at the same time.
+  metadata:
+    tags:
+      - e2e
+      - release team
+      - other tag
+    build: Release $CI_COMMIT_SHORT_SHA
+docker:
+  # Affects how test files are transferred to the docker container when using the docker mode.
+  fileTransfer: copy # Choose between mount|copy.
+playwright:
+  version: 1.22.2 # See https://docs.saucelabs.com/dev/cli/saucectl/#supported-frameworks-and-browsers for a list of supported versions.
+# Controls what files are available in the context of a test run (unless explicitly excluded by .sauceignore).
+rootDir: ./
+suites:
+  # - name: "Firefox using global mode" # Since the suite doesn't specify the `mode`, it'll inherit the mode specified via `defaults.mode` (see line number 3 and 4 of this config file).
+  #   platformName: "Windows 10" # Only relevant when running a test against the sauce cloud.
+  #   testMatch: ['tests/CaseSearchTest.spec.ts']
+  #   params:
+  #     browserName: "firefox"
+  # - name: "Chromium in docker"
+  #   mode: docker
+  #   testMatch: ['tests/CaseSearchTest.spec.ts']
+  #   params:
+  #     browserName: "chromium"
+  # - name: "Firefox in docker"
+  #   mode: docker
+  #   testMatch: ['.*.js']
+  #   params:
+  #     browserName: "firefox"
+  # - name: "Webkit in docker"
+  #   mode: docker
+  #   testMatch: ['.*.js']
+  #   params:
+  #     browserName: "webkit"
+  - name: "Chromium on Mac"
+    mode: sauce
+    platformName: "macos 11.00"
+    testMatch: ['./tests/CaseSearchTest.spec.ts']
+    params:
+      browserName: "chromium"
+  # - name: "Webkit in sauce"
+  #   mode: sauce
+  #   platformName: "Windows 10"
+  #   testMatch: ['.*.ts']
+  #   params:
+  #     browserName: "webkit"
+
+
+# Controls what artifacts to fetch when the suite on Sauce Cloud has finished.
+artifacts:
+  download:
+    when: always
+    match:
+      - console.log
+    directory: ./artifacts/

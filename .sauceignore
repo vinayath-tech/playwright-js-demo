@@ -1,0 +1,5 @@
+# This file instructs saucectl to not package any files mentioned here.
+.git/
+.github/
+.gitignore
+.npmrc

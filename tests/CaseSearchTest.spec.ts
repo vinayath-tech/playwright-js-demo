@@ -1,11 +1,11 @@
-import {test, BrowserContext, Page, expect} from "@playwright/test";
+import {test, Page, expect} from "@playwright/test";
 
 test.describe('Manage case - Search case test', () => {
 
     let page: Page;
     let testData:string = '1657100083848293';
     let webContext;
-    
+
     test.beforeEach(async({browser}) => {
         webContext = await browser.newContext({storageState:'state.json'});
         page = await webContext.newPage();
