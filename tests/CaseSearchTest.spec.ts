@@ -1,4 +1,6 @@
-import {test, Page, expect} from "@playwright/test";
+import { test, Page, expect} from "@playwright/test";
+import { injectAxe } from 'axe-playwright';
+import { runPa11y, getViolation } from '../utils/runPa11y';
 
 test.describe('Manage case - Search case test', () => {
 
@@ -10,8 +12,18 @@ test.describe('Manage case - Search case test', () => {
         webContext = await browser.newContext({storageState:'state.json'});
         page = await webContext.newPage();
         page.goto('https://manage-case.aat.platform.hmcts.net/cases');
+        await page.waitForTimeout(10000);
     });
 
+    test.afterEach(async({browser}) => {
+        await browser.close();
+    });
+
+    test('Execute pa11y scan on landing page @pa11y', async() => {
+        await injectAxe(page);
+        await runPa11y(page);
+        await getViolation(page);
+    });
 
     test('Search a case and verify case details', async() => {
 

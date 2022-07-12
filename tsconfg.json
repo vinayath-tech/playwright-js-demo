@@ -4,6 +4,7 @@
         "strict": true,
         "module": "commonjs",
         "sourceMap": true,
-        "resolveJsonModule": true
+        "resolveJsonModule": true,
+        "types": ["axe-playwright"]
     }
 }

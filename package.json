@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "functional-test": "npx playwright test",
-    "crossbrowser-test": "saucectl run"
+    "functional-test": "npx playwright test --grep-invert @pa11y",
+    "crossbrowser-test": "saucectl run",
+    "accessibility-test": "npx playwright test --grep @pa11y"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/vinayath-tech/playwright-js-demo#readme",
   "devDependencies": {
-    "@playwright/test": "1.22.2"
+    "@playwright/test": "1.22.2",
+    "axe-playwright": "^1.1.11"
   }
 }
