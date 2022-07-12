@@ -17,7 +17,7 @@ docker:
 playwright:
   version: 1.22.2 # See https://docs.saucelabs.com/dev/cli/saucectl/#supported-frameworks-and-browsers for a list of supported versions.
 # Controls what files are available in the context of a test run (unless explicitly excluded by .sauceignore).
-# rootDir: ./
+rootDir: "./"
 suites:
   # - name: "Firefox using global mode" # Since the suite doesn't specify the `mode`, it'll inherit the mode specified via `defaults.mode` (see line number 3 and 4 of this config file).
   #   platformName: "Windows 10" # Only relevant when running a test against the sauce cloud.
@@ -49,7 +49,7 @@ suites:
   - name: "Webkit in sauce"
     mode: sauce
     platformName: "Windows 10"
-    testMatch: ['.*.ts']
+    testMatch: ['casesearchtest.spec.ts']
     params:
       browserName: "webkit"
 
