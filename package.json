@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "cross-env test_env=test npx playwright test",
+    "test:prod": "cross-env test_env=prod npx playwright test",
+    "test:api": "npx playwright test --config=config/playwright.api.config.ts",
+    "allure:generate": "npx allure generate ./allure-results --clean",
+    "allure:open": " npx allure open ./allure-report",
+    "posttest": "npm run allure:generate"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vinayath-tech/playwright-js-demo.git"
@@ -16,6 +23,12 @@
   },
   "homepage": "https://github.com/vinayath-tech/playwright-js-demo#readme",
   "devDependencies": {
-    "@playwright/test": "^1.23.1"
+    "@playwright/test": "^1.23.3",
+    "allure-playwright": "^2.0.0-beta.18",
+    "odottaa": "^1.1.7"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.1"
   }
 }

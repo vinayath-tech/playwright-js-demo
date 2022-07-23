@@ -1,9 +1,14 @@
 {
     "compilerOptions": {
-        "target": "es6",
-        "strict": true,
-        "module": "commonjs",
-        "sourceMap": true,
-        "resolveJsonModule": true
+        "resolveJsonModule": true,
+        "baseUrl": ".",
+        "paths": {
+            "@pages/*": [
+                "pages/*"
+            ],
+            "@fixtures/*": [
+                "fixtures/*"
+            ]
+        }
     }
 }

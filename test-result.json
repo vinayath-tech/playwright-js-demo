@@ -1,0 +1,320 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\global-setup.ts",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/gokul/personal-projects/playwright-js-demo/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "",
+        "testDir": "C:/Users/gokul/personal-projects/playwright-js-demo/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result.json"
+        }
+      ],
+      [
+        "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\node_modules\\allure-playwright\\dist\\index.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "rootDir": "C:/Users/gokul/personal-projects/playwright-js-demo/tests",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.23.3",
+    "workers": 6,
+    "webServer": null,
+    "_globalOutputDir": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo",
+    "_configDir": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo",
+    "_testGroupsCount": 6
+  },
+  "suites": [
+    {
+      "title": "AddItemsToCartTest.spec.ts",
+      "file": "AddItemsToCartTest.spec.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Add Items to cart tests",
+          "file": "AddItemsToCartTest.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Add item to cart from landing page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 11657,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\test-results\\AddItemsToCartTest-Add-Items-to-cart-tests-Add-item-to-cart-from-landing-page\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "AddItemsToCartTest.spec.ts",
+              "line": 20,
+              "column": 5
+            },
+            {
+              "title": "Add item from item details page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 11647,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\test-results\\AddItemsToCartTest-Add-Items-to-cart-tests-Add-item-from-item-details-page\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "AddItemsToCartTest.spec.ts",
+              "line": 28,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "landingPageTest.spec.ts",
+      "file": "landingPageTest.spec.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Sauce feature",
+          "file": "landingPageTest.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "First playwright test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 11537,
+                      "stdout": [
+                        {
+                          "text": "[\n  'Sauce Labs Backpack',\n  'Sauce Labs Bike Light',\n  'Sauce Labs Bolt T-Shirt',\n  'Sauce Labs Fleece Jacket',\n  'Sauce Labs Onesie',\n  'Test.allTheThings() T-Shirt (Red)'\n]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\test-results\\landingPageTest-Sauce-feature-First-playwright-test\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "landingPageTest.spec.ts",
+              "line": 18,
+              "column": 5
+            },
+            {
+              "title": "Sort products low to high",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "passed",
+                      "duration": 11678,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\test-results\\landingPageTest-Sauce-feature-Sort-products-low-to-high\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "landingPageTest.spec.ts",
+              "line": 23,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "navigationTest.spec.ts",
+      "file": "navigationTest.spec.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Navigation tests",
+          "file": "navigationTest.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Navigate to item details page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "passed",
+                      "duration": 11557,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\test-results\\navigationTest-Navigation-tests-Navigate-to-item-details-page\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "navigationTest.spec.ts",
+              "line": 21,
+              "column": 5
+            },
+            {
+              "title": "Navigate to checkout page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "passed",
+                      "duration": 11478,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\test-results\\navigationTest-Navigation-tests-Navigate-to-checkout-page\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "navigationTest.spec.ts",
+              "line": 27,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

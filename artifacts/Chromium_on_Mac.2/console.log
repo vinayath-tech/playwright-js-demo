@@ -1,0 +1,32 @@
+Preparing npm environment
+
+Running 0 test using 0 worker
+
+
+Error: Cannot find module 'axe-playwright'
+Require stack:
+- /Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.9.0/bundle/__project__/tests/CaseSearchTest.spec.ts
+- /Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.9.0/bundle/node_modules/@playwright/test/lib/loader.js
+- /Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.9.0/bundle/node_modules/@playwright/test/lib/runner.js
+- /Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.9.0/bundle/node_modules/@playwright/test/lib/cli.js
+- /Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.9.0/bundle/node_modules/playwright-core/lib/cli/cli.js
+- /Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.9.0/bundle/node_modules/playwright-core/cli.js
+- /Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.9.0/bundle/node_modules/@playwright/test/cli.js
+
+   at CaseSearchTest.spec.ts:2
+
+  1 | import { test, Page, expect} from "@playwright/test";
+> 2 | import { injectAxe } from 'axe-playwright';
+    | ^
+  3 | import { runPa11y, getViolation } from '../utils/runPa11y';
+  4 |
+  5 | // test.describe('Manage case - Search case test', () => {
+
+    at Object.<anonymous> (/Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.9.0/bundle/__project__/tests/CaseSearchTest.spec.ts:2:1)
+
+=================
+ no tests found.
+=================
+
+
+

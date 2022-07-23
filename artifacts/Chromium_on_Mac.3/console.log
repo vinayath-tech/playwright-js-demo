@@ -1,0 +1,37 @@
+Preparing npm environment
+Detected node_modules, running npm rebuilding.
+
+Rebuilding packages:
+
+Running 0 test using 0 worker
+
+
+Error: tests/CaseSearchTest.spec.ts:14:12: Playwright Test did not expect test.beforeEach() to be called here.
+Most common reasons include:
+- You are calling test.beforeEach() in a configuration file.
+- You are calling test.beforeEach() in a file that is imported by the configuration file.
+- You have two different versions of @playwright/test. This usually happens
+  when one of the dependenices in your package.json depends on @playwright/test.
+
+   at ../node_modules/@playwright/test/lib/util.js:221
+
+  219 |
+  220 | function errorWithLocation(location, message) {
+> 221 |   return new Error(`${formatLocation(location)}: ${message}`);
+      |          ^
+  222 | }
+  223 |
+  224 | function expectTypes(receiver, types, matcherName) {
+
+    at errorWithLocation (/Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.9.0/bundle/__project__/node_modules/@playwright/test/lib/util.js:221:10)
+    at TestTypeImpl._ensureCurrentSuite (/Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.9.0/bundle/__project__/node_modules/@playwright/test/lib/testType.js:79:41)
+    at TestTypeImpl._hook (/Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.9.0/bundle/__project__/node_modules/@playwright/test/lib/testType.js:135:24)
+    at Function.beforeEach (/Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.9.0/bundle/__project__/node_modules/@playwright/test/lib/transform.js:269:12)
+    at Object.<anonymous> (/Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.9.0/bundle/__project__/tests/CaseSearchTest.spec.ts:14:12)
+
+=================
+ no tests found.
+=================
+
+
+

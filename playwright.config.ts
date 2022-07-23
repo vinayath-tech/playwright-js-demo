@@ -11,18 +11,18 @@ import { devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 const config: PlaywrightTestConfig = {
-  testDir: './tests',
+  testDir: './tests/ui',
   /* Maximum time one test can run for. */
-  // timeout: 30 * 1000,
+  timeout: 30 * 1000,
   expect: {
     /**
      * Maximum time expect() should wait for the condition to be met.
      * For example in `await expect(locator).toHaveText();`
      */
-    timeout: 5000
+    timeout: 2000
   },
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [["dot"],["json", { outputFile: "test-result.json" }], ['allure-playwright']],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   globalSetup: require.resolve('./global-setup'),
   use: {
@@ -34,8 +34,6 @@ const config: PlaywrightTestConfig = {
     headless: true,
     screenshot: 'on',
     trace: 'retain-on-failure'
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    // trace: 'on-first-retry',
   },
 
   /* Configure projects for major browsers */
