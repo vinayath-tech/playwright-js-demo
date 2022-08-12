@@ -1,5 +1,5 @@
 import { chromium, expect, BrowserContext } from '@playwright/test';
-import { LoginPage } from '@pages/login.page';
+import { LoginPage } from '@pages/ui/login.page';
 import * as data from './data/testData.json';
 import * as dotenv  from 'dotenv';
 

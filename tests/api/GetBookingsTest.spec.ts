@@ -36,10 +36,22 @@ test.describe('API tests to create auth token', () => {
 
         await newBookingResponse.json().then(responseBody => {
             bookingId = responseBody.bookingid;
-            expect(`${responseBody.booking.firstname}`).toBe('Gokul');
-            expect(`${responseBody.booking.totalprice}`).toBe('150');
+            expect(`${responseBody.booking.firstname}`).toBe(bookingPayload.firstname);
+            expect(`${responseBody.booking.totalprice}`).toBe(bookingPayload.totalprice.toString());
         });
-    })
+    });
+
+
+    //Get booking details
+    test('Fetch the booking details',async({request}) => {
+
+        const fetchBookingResponse = await request.get(`/booking/${bookingId}`);
+
+        expect(await fetchBookingResponse.ok()).toBeTruthy();
+        expect(await fetchBookingResponse.json()).toMatchObject(bookingPayload);
+        // if(JSON.stringify(await fetchBookingResponse.json()) !== JSON.stringify(bookingPayload)) throw new Error('JSON repsonse is not equal');
+        
+    });
 
     //update
     test('Update an existing booking', async({request}) => {
@@ -54,8 +66,8 @@ test.describe('API tests to create auth token', () => {
         expect(updatedBookingResp.ok()).toBeTruthy();
 
         await updatedBookingResp.json().then(responseBody => {
-            expect(`${responseBody.firstname}`).toBe('Update-gokul');
-            expect(`${responseBody.totalprice}`).toBe('200');
+            expect(`${responseBody.firstname}`).toBe(updatedPayload.firstname);
+            expect(`${responseBody.totalprice}`).toBe(updatedPayload.totalprice.toString());
         });
     });
 

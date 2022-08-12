@@ -1,7 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Jul 16 18:55:25 BST 2022","Sat Jul 16 18:55:37 BST 2022","11658","","AddItemsToCartTest.spec.ts","Add Items to cart tests","","","Add item to cart from landing page",""
-"passed","Sat Jul 16 18:55:25 BST 2022","Sat Jul 16 18:55:37 BST 2022","11679","","landingPageTest.spec.ts","Sauce feature","","","Sort products low to high",""
-"passed","Sat Jul 16 18:55:26 BST 2022","Sat Jul 16 18:55:37 BST 2022","11559","","navigationTest.spec.ts","Navigation tests","","","Navigate to item details page",""
-"passed","Sat Jul 16 18:55:25 BST 2022","Sat Jul 16 18:55:37 BST 2022","11646","","AddItemsToCartTest.spec.ts","Add Items to cart tests","","","Add item from item details page",""
-"passed","Sat Jul 16 18:55:25 BST 2022","Sat Jul 16 18:55:37 BST 2022","11480","","navigationTest.spec.ts","Navigation tests","","","Navigate to checkout page",""
-"passed","Sat Jul 16 18:55:25 BST 2022","Sat Jul 16 18:55:37 BST 2022","11538","","landingPageTest.spec.ts","Sauce feature","","","First playwright test",""

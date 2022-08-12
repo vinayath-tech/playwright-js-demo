@@ -1,13 +1,15 @@
 {
     "compilerOptions": {
+        "esModuleInterop": true,
+        "moduleResolution": "Node",
         "resolveJsonModule": true,
         "baseUrl": ".",
         "paths": {
             "@pages/*": [
                 "pages/*"
             ],
-            "@fixtures/*": [
-                "fixtures/*"
+            "@lib/*": [
+                "lib/*"
             ]
         }
     }

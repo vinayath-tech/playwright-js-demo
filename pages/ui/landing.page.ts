@@ -24,11 +24,6 @@ export class LandingPage{
         await this.page.locator('#add-to-cart-sauce-labs-backpack').click();
     }
 
-    public async readMsg(){
-        await console.log('Test to check inheritance');
-    } 
-
-
     public async sortItem(optionValue: string) {
         await this.page.selectOption('.product_sort_container', { label: optionValue});
     }

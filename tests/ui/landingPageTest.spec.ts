@@ -1,6 +1,6 @@
 import * as data from '../../data/testData.json';
 import env from '../../utils/env';
-import test, { expect } from '@fixtures/BaseTest';
+import test, { expect } from '@lib/BaseTest';
 
 test.describe('Sauce feature', () => {
 

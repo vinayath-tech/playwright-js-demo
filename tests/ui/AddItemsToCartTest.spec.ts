@@ -1,4 +1,4 @@
-import test, { expect } from '@fixtures/BaseTest';
+import test, { expect } from '@lib/BaseTest';
 import env from '../../utils/env';
 
 test.describe('Add Items to cart tests', () => {

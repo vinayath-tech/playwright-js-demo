@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/vinayath-tech/playwright-js-demo#readme",
   "devDependencies": {
+    "@faker-js/faker": "^7.4.0",
     "@playwright/test": "^1.23.3",
     "allure-playwright": "^2.0.0-beta.18",
     "odottaa": "^1.1.7"
