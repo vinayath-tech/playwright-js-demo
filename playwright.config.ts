@@ -22,7 +22,10 @@ const config: PlaywrightTestConfig = {
     timeout: 2000
   },
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [["dot"],["json", { outputFile: "test-result.json" }], ['allure-playwright']],
+  reporter: [["dot"],
+             ["json", { outputFile: "test-result.json" }], 
+             ['allure-playwright'],
+            ["html", { open: "never"}]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   globalSetup: require.resolve('./global-setup'),
   use: {

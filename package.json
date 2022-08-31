@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pretest": "npx playwright install && npx playwright install-deps",
     "test": "cross-env test_env=test npx playwright test",
     "test:prod": "cross-env test_env=prod npx playwright test",
     "test:api": "npx playwright test --config=config/playwright.api.config.ts",
     "allure:generate": "npx allure generate ./allure-results --clean",
-    "allure:open": " npx allure open ./allure-report",
-    "posttest": "npm run allure:generate"
+    "allure:open": " npx allure open ./allure-report"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
   "devDependencies": {
     "@faker-js/faker": "^7.4.0",
     "@playwright/test": "^1.23.3",
-    "allure-playwright": "^2.0.0-beta.18",
+    "allure-playwright": "^2.0.0-beta.19",
     "odottaa": "^1.1.7"
   },
   "dependencies": {

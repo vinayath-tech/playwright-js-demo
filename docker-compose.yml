@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  test:
+    image: gok87/playtest:latest
+    command: "npm run test"
+    volumes: 
+      - test-report:/app/test-results/
+
+volumes:
+  test-report:

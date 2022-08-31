@@ -2,7 +2,7 @@
   "config": {
     "forbidOnly": false,
     "fullyParallel": false,
-    "globalSetup": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\global-setup.ts",
+    "globalSetup": "/mnt/c/Users/gokul/personal-projects/playwright-js-demo/global-setup.ts",
     "globalTeardown": null,
     "globalTimeout": 0,
     "grep": {},
@@ -12,11 +12,11 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/gokul/personal-projects/playwright-js-demo/test-results",
+        "outputDir": "/mnt/c/Users/gokul/personal-projects/playwright-js-demo/test-results",
         "repeatEach": 1,
         "retries": 0,
         "name": "",
-        "testDir": "C:/Users/gokul/personal-projects/playwright-js-demo/tests",
+        "testDir": "/mnt/c/Users/gokul/personal-projects/playwright-js-demo/tests/ui",
         "testIgnore": [],
         "testMatch": [
           "**/?(*.)@(spec|test).*"
@@ -36,7 +36,7 @@
         }
       ],
       [
-        "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\node_modules\\allure-playwright\\dist\\index.js",
+        "/mnt/c/Users/gokul/personal-projects/playwright-js-demo/node_modules/allure-playwright/dist/index.js",
         null
       ]
     ],
@@ -44,16 +44,16 @@
       "max": 5,
       "threshold": 15000
     },
-    "rootDir": "C:/Users/gokul/personal-projects/playwright-js-demo/tests",
+    "rootDir": "/mnt/c/Users/gokul/personal-projects/playwright-js-demo/tests/ui",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.23.3",
     "workers": 6,
     "webServer": null,
-    "_globalOutputDir": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo",
-    "_configDir": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo",
-    "_testGroupsCount": 6
+    "_globalOutputDir": "/mnt/c/Users/gokul/personal-projects/playwright-js-demo",
+    "_configDir": "/mnt/c/Users/gokul/personal-projects/playwright-js-demo",
+    "_testGroupsCount": 7
   },
   "suites": [
     {
@@ -83,7 +83,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 11657,
+                      "duration": 6979,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -91,7 +91,7 @@
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\test-results\\AddItemsToCartTest-Add-Items-to-cart-tests-Add-item-to-cart-from-landing-page\\test-finished-1.png"
+                          "path": "/mnt/c/Users/gokul/personal-projects/playwright-js-demo/test-results/AddItemsToCartTest-Add-Items-to-cart-tests-Add-item-to-cart-from-landing-page/test-finished-1.png"
                         }
                       ]
                     }
@@ -117,7 +117,7 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 11647,
+                      "duration": 6975,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -125,7 +125,7 @@
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\test-results\\AddItemsToCartTest-Add-Items-to-cart-tests-Add-item-from-item-details-page\\test-finished-1.png"
+                          "path": "/mnt/c/Users/gokul/personal-projects/playwright-js-demo/test-results/AddItemsToCartTest-Add-Items-to-cart-tests-Add-item-from-item-details-page/test-finished-1.png"
                         }
                       ]
                     }
@@ -135,6 +135,57 @@
               ],
               "file": "AddItemsToCartTest.spec.ts",
               "line": 28,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "CheckoutItemTest.spec.ts",
+      "file": "CheckoutItemTest.spec.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Checkout an item successfully",
+          "file": "CheckoutItemTest.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Add Item to cart and checkout",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 7747,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/mnt/c/Users/gokul/personal-projects/playwright-js-demo/test-results/CheckoutItemTest-Checkout-an-item-successfully-Add-Item-to-cart-and-checkout/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "CheckoutItemTest.spec.ts",
+              "line": 19,
               "column": 5
             }
           ]
@@ -166,9 +217,9 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 3,
                       "status": "passed",
-                      "duration": 11537,
+                      "duration": 6878,
                       "stdout": [
                         {
                           "text": "[\n  'Sauce Labs Backpack',\n  'Sauce Labs Bike Light',\n  'Sauce Labs Bolt T-Shirt',\n  'Sauce Labs Fleece Jacket',\n  'Sauce Labs Onesie',\n  'Test.allTheThings() T-Shirt (Red)'\n]\n"
@@ -180,7 +231,7 @@
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\test-results\\landingPageTest-Sauce-feature-First-playwright-test\\test-finished-1.png"
+                          "path": "/mnt/c/Users/gokul/personal-projects/playwright-js-demo/test-results/landingPageTest-Sauce-feature-First-playwright-test/test-finished-1.png"
                         }
                       ]
                     }
@@ -204,9 +255,9 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 4,
                       "status": "passed",
-                      "duration": 11678,
+                      "duration": 6730,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -214,7 +265,7 @@
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\test-results\\landingPageTest-Sauce-feature-Sort-products-low-to-high\\test-finished-1.png"
+                          "path": "/mnt/c/Users/gokul/personal-projects/playwright-js-demo/test-results/landingPageTest-Sauce-feature-Sort-products-low-to-high/test-finished-1.png"
                         }
                       ]
                     }
@@ -255,9 +306,9 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 5,
                       "status": "passed",
-                      "duration": 11557,
+                      "duration": 6837,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -265,7 +316,7 @@
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\test-results\\navigationTest-Navigation-tests-Navigate-to-item-details-page\\test-finished-1.png"
+                          "path": "/mnt/c/Users/gokul/personal-projects/playwright-js-demo/test-results/navigationTest-Navigation-tests-Navigate-to-item-details-page/test-finished-1.png"
                         }
                       ]
                     }
@@ -289,9 +340,9 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 3,
                       "status": "passed",
-                      "duration": 11478,
+                      "duration": 6164,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -299,7 +350,7 @@
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\gokul\\personal-projects\\playwright-js-demo\\test-results\\navigationTest-Navigation-tests-Navigate-to-checkout-page\\test-finished-1.png"
+                          "path": "/mnt/c/Users/gokul/personal-projects/playwright-js-demo/test-results/navigationTest-Navigation-tests-Navigate-to-checkout-page/test-finished-1.png"
                         }
                       ]
                     }
