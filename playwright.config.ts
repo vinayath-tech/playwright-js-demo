@@ -34,7 +34,7 @@ const config: PlaywrightTestConfig = {
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: 'https://www.saucedemo.com',
     browserName: 'chromium',
-    headless: true,
+    headless: false,
     screenshot: 'on',
     trace: 'retain-on-failure'
   },

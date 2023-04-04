@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pretest": "npx playwright install && npx playwright install-deps",
-    "test": "cross-env test_env=test npx playwright test",
+    "test": "cross-env test_env=test PWDEBUG=console npx playwright test --grep @new-test",
     "test:prod": "cross-env test_env=prod npx playwright test",
     "test:api": "npx playwright test --config=config/playwright.api.config.ts",
     "allure:generate": "npx allure generate ./allure-results --clean",
